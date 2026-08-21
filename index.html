@@ -92,6 +92,7 @@
         color: inherit;
         text-decoration: none;
         transition: background 160ms ease;
+        container-type: inline-size;
       }
 
       .card:hover {
@@ -143,6 +144,14 @@
         margin-left: 0.06em;
       }
 
+      .statement {
+        font-family: Georgia, "Iowan Old Style", "Times New Roman", Times, serif;
+        font-size: clamp(1.32rem, 7.3cqi, 2.28rem);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        line-height: 1.08;
+      }
+
       .meta {
         color: var(--muted);
         font-size: 0.86rem;
@@ -192,7 +201,11 @@
             <span class="company">BailHQ</span>
             <img class="logo" src="assets/bailhq.png" alt="" width="28" height="28" />
           </div>
-          <div class="figure">$100<span>/mo</span></div>
+          <p class="statement">
+            The Modern<br />
+            Software Stack<br />
+            for Bail Bondsman
+          </p>
           <p class="meta">
             Co-Founder<br />
             current / Texas
